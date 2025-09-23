@@ -31,8 +31,8 @@ namespace PracticalLesson1.Managers
                     Console.WriteLine($"{item.Id}. {item.GetStatusDisplay()} {item.Description}");
                 }
             }
-            Console.WriteLine("------------------------");
-
+            Console.WriteLine("------------------------");        
         }
+
     }
 }
