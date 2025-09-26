@@ -8,7 +8,7 @@ namespace PracticalLesson1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the To-Do List Application!");
+            Console.WriteLine("Добро to the To-Do List Application!");//////////
 
             var todoManager = new TodoListManager();
 
