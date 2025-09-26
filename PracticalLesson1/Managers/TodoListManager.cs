@@ -46,7 +46,21 @@ namespace PracticalLesson1.Managers
             {
                 Console.WriteLine("Task description cannot be empty");
             }
-
+        }
+        public bool ToggleTaskCompletion(int taskId)
+        { 
+            var taskToToggle = _practicalLesson1.FirstOrDefault(t => t.Id == taskId);
+            if (taskToToggle != null)
+            {
+                taskToToggle.IsCompleted = !taskToToggle.IsCompleted;
+                Console.WriteLine($"Задание {taskId} выполнено статус обновлён");
+                return true;
+            }
+            else
+            { 
+                Console.WriteLine($"Задание с ID {taskId} не найден");
+                return false;
+            }
         }
     }
 }
